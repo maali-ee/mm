@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Marry Me?</title>
+  <style>
+    body {
+      background-color: #E6E6FA;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #4B0082;
+    }
+    .heart {
+      font-size: 60px;
+      margin: 20px 0;
+    }
+    .hidden {
+      display: none;
+    }
+    button {
+      background-color: #D8BFD8;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 20px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will you marry me?</h1>
+
+  <button onclick="showMessage()">Yes</button>
+
+  <div id="result" class="hidden">
+    <div class="heart">❤</div>
+    <h2>Thank you</h2>
+    <p class="message">
+      I'm sorry I refused you because I wanted to secure our future...<br>
+      I joined the military, graduated as a lieutenant,<br>
+      because you were one of the reasons I worked hard to build myself — for you.
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("result").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
